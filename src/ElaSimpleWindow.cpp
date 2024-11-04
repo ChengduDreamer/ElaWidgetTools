@@ -100,6 +100,8 @@ ElaSimpleWindow::ElaSimpleWindow(QWidget* parent)
     connect(eApp, &ElaApplication::pIsEnableMicaChanged, this, [=]() {
         d->onThemeModeChanged(d->_themeMode);
     });
+
+    setIsNavigationBarEnable(false);
 }
 
 ElaSimpleWindow::~ElaSimpleWindow()
